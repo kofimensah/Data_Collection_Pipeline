@@ -33,6 +33,7 @@ class Scraper:
         for house in houses_container:
             print(house.find_element(by=By.XPATH, value=".//p[@class='css-1w7anck e1h9td4l31']").text)
 
+
     def search(self, driver, search_item='London'):
         '''
         Function for searching in a search field on a webpage.

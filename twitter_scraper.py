@@ -18,8 +18,8 @@ driver.get(url)
 # method for cookies
 delay = 10
 try:
-    WebDriverWait(driver, delay).until(EC.presence_of_all_elements_located((By.XPATH, '')))
-    print("Frame Ready!")
+    WebDriverWait(driver, delay).until(EC.presence_of_all_elements_located((By.XPATH, "//div[@class='css-1dbjc4n r-aqfbo4 r-1p0dtai r-1d2f490 r-12vffkv r-1xcajam r-zchlnj']")))
+    print("Frame Accessed!")
     driver.switch_to.frame('') # name of frame
 except TimeoutException:
     print("loading timeout")
@@ -34,14 +34,11 @@ except TimeoutException:
         time.sleep(1)
     except TimeoutException:
         print("Loading took too much time!")
-
 '''    
 
 
 # method to navigate to desired pages - by link or by click
-teams_page = driver.find_elements(by=By.XPATH, value="//div[@class='css-1itfubx e1c4dna40']//div[@class='e1c4dna41 css-dhlvpc e1h9td4l19']")
-for house in houses_container:
-    print(house.find_element(by=By.XPATH, value=".//p[@class='css-1w7anck e1h9td4l31']").text)
+
 
 # method to deal with pop-ups
 
