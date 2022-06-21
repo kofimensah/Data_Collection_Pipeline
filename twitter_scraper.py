@@ -1,5 +1,5 @@
 '''
-This my twitter scraper, where I will scrape my own twitter information to see how people interact and think
+This my twitter scraper, where I will scrape my own twitter information to see how people interact and think as well as current trents on the TL
 '''
 
 from selenium.webdriver.support import expected_conditions as EC
@@ -41,4 +41,7 @@ except TimeoutException:
 
 
 # method to deal with pop-ups
-
+def pop_ups():
+    #Navigate to pop-up HTML frame
+    #Click on the close button
+    pass
