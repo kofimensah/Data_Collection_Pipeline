@@ -38,7 +38,12 @@ except TimeoutException:
 
 
 # method to navigate to desired pages - by link or by click
-
+def navigator():
+    #navigate to pages frame
+    #take page number as input
+    #search frame for <a> link with text = page_number
+    #click
+    pass
 
 # method to deal with pop-ups
 def pop_ups():
